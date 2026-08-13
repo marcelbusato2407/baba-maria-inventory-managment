@@ -1,0 +1,306 @@
+:root {
+  --cor-fundo: #ffffff;
+  --cor-sidebar: #24513a;
+  --cor-sidebar-texto: #ffffff;
+  --cor-primaria: #24513a;
+  --cor-primaria-escura: #163524;
+  --cor-secundaria: #7a3030;
+  --cor-texto: #000000;
+  --cor-texto-claro: #000000;
+  --cor-borda: #cccccc;
+  --cor-branco: #ffffff;
+  --cor-sucesso: #2e7d32;
+  --cor-alerta: #d68a10;
+  --cor-perigo: #7a3030;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---------- Menu lateral ---------- */
+
+.sidebar {
+  width: 210px;
+  background-color: var(--cor-sidebar);
+  color: var(--cor-sidebar-texto);
+  padding: 24px 0;
+  flex-shrink: 0;
+}
+
+.sidebar .logo {
+  padding: 0 20px 20px 20px;
+  margin-bottom: 16px;
+}
+
+.sidebar .logo h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.sidebar .logo span {
+  font-size: 12px;
+  color: #d9d9d9;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--cor-sidebar-texto);
+  text-decoration: none;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+}
+
+.sidebar nav a.ativo {
+  background-color: var(--cor-secundaria);
+  font-weight: bold;
+}
+
+/* ---------- Conteúdo principal ---------- */
+
+.conteudo {
+  flex: 1;
+  padding: 28px 36px;
+  overflow-y: auto;
+}
+
+.conteudo header {
+  margin-bottom: 20px;
+}
+
+.conteudo header h2 {
+  margin: 0 0 4px 0;
+  font-size: 22px;
+}
+
+.conteudo header p {
+  margin: 0;
+  color: var(--cor-texto-claro);
+  font-size: 14px;
+}
+
+/* ---------- Cards ---------- */
+
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: block;
+  background-color: var(--cor-branco);
+  border: 2px solid var(--cor-texto);
+  border-radius: 16px;
+  padding: 16px 20px;
+  min-width: 180px;
+  flex: 1;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: var(--cor-primaria);
+}
+
+.card .valor {
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.card .rotulo {
+  font-size: 13px;
+  color: var(--cor-texto-claro);
+  margin-top: 4px;
+}
+
+.atalhos {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Botões ---------- */
+
+.botao {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 4px;
+  padding: 9px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: var(--cor-primaria-escura);
+}
+
+.botao.secundario {
+  background-color: var(--cor-branco);
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+}
+
+.botao.secundario:hover {
+  background-color: #eeeeee;
+}
+
+.botao.perigo {
+  background-color: var(--cor-branco);
+  color: var(--cor-perigo);
+  border: 1px solid var(--cor-perigo);
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.botao.pequeno {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* ---------- Formulários ---------- */
+
+.painel {
+  background-color: var(--cor-branco);
+  border: 2px solid var(--cor-borda);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.painel h3 {
+  margin-top: 0;
+}
+
+.linha-formulario {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 160px;
+}
+
+.campo label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: var(--cor-texto-claro);
+}
+
+.campo input,
+.campo select {
+  padding: 8px 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: var(--cor-branco);
+  color: var(--cor-texto);
+}
+
+.acoes-formulario {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+/* ---------- Tabelas ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--cor-branco);
+  border: 2px solid var(--cor-borda);
+}
+
+thead {
+  background-color: var(--cor-borda);
+}
+
+thead th {
+  color: #000000;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.acoes-tabela {
+  display: flex;
+  gap: 8px;
+}
+
+/* ---------- Status ---------- */
+
+.status {
+  font-size: 14px;
+  color: var(--cor-texto);
+}
+
+/* ---------- Mensagens ---------- */
+
+.mensagem {
+  padding: 10px 14px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.mensagem.erro {
+  background-color: #f8d7da;
+  color: var(--cor-perigo);
+  border: 1px solid #eccaca;
+}
+
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: var(--cor-sucesso);
+  border: 1px solid #c3e6cb;
+}
+
+.escondido {
+  display: none !important;
+}
+
+.texto-vazio {
+  color: var(--cor-texto-claro);
+  font-size: 14px;
+  padding: 16px 0;
+}
+
+.busca {
+  margin-bottom: 16px;
+  max-width: 280px;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "gestao-baba-maria-massas",
+  "version": "1.0.0",
+  "description": "Sistema de controle de estoque para a Baba Maria Massas",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^43.0.0"
+  }
+}

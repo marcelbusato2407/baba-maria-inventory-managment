@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtos - Baba Maria Massas</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>Baba Maria Massas</h1>
+        <span>Gestão de Controle de Estoque</span>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html" class="ativo">Produtos</a>
+        <a href="estoque.html">Estoque</a>
+        <a href="movimentacoes.html">Movimentações</a>
+      </nav>
+    </aside>
+
+    <main class="conteudo">
+      <header>
+        <h2>Produtos</h2>
+        <p>Cadastre e gerencie os produtos da Baba Maria Massas.</p>
+      </header>
+
+      <div id="mensagem" class="mensagem escondido"></div>
+
+      <div class="atalhos">
+        <button class="botao" id="botao-novo-produto">Novo produto</button>
+      </div>
+
+      <section class="painel escondido" id="painel-formulario">
+        <h3 id="titulo-formulario">Novo produto</h3>
+        <form id="form-produto">
+          <input type="hidden" id="produto-id" />
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="produto-nome">Nome</label>
+              <input type="text" id="produto-nome" required />
+            </div>
+            <div class="campo">
+              <label for="produto-categoria">Categoria</label>
+              <input type="text" id="produto-categoria" required />
+            </div>
+          </div>
+          <div class="linha-formulario">
+            <div class="campo">
+              <label for="produto-preco">Preço (R$)</label>
+              <input type="number" id="produto-preco" min="0" step="0.01" required />
+            </div>
+            <div class="campo" id="campo-quantidade-inicial">
+              <label for="produto-quantidade">Quantidade inicial em estoque</label>
+              <input type="number" id="produto-quantidade" min="0" step="1" required />
+            </div>
+            <div class="campo">
+              <label for="produto-estoque-minimo">Estoque mínimo</label>
+              <input type="number" id="produto-estoque-minimo" min="0" step="1" required />
+            </div>
+          </div>
+          <div class="acoes-formulario">
+            <button type="submit" class="botao">Salvar</button>
+            <button type="button" class="botao secundario" id="botao-cancelar">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Estoque mínimo</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos"></tbody>
+      </table>
+      <p class="texto-vazio escondido" id="texto-lista-vazia">Nenhum produto cadastrado ainda.</p>
+    </main>
+  </div>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/produtos.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Lasanha de Frango",
+      "categoria": "Massas Recheadas",
+      "preco": 32.9,
+      "quantidade": 15,
+      "estoqueMinimo": 5
+    }
+  ],
+  "movimentacoes": [
+    {
+      "id": 1,
+      "produtoId": 1,
+      "tipo": "entrada",
+      "quantidade": 15,
+      "data": "2026-08-12",
+      "observacao": "Produção da manhã"
+    }
+  ]
+}

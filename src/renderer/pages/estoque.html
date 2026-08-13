@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Estoque - Baba Maria Massas</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>Baba Maria Massas</h1>
+        <span>Gestão de Controle de Estoque</span>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="estoque.html" class="ativo">Estoque</a>
+        <a href="movimentacoes.html">Movimentações</a>
+      </nav>
+    </aside>
+
+    <main class="conteudo">
+      <header>
+        <h2>Estoque</h2>
+        <p>Visão geral da quantidade disponível de cada produto.</p>
+      </header>
+
+      <div class="campo busca">
+        <label for="busca-produto">Buscar produto</label>
+        <input type="text" id="busca-produto" placeholder="Digite o nome do produto..." />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+            <th>Estoque mínimo</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-estoque"></tbody>
+      </table>
+      <p class="texto-vazio escondido" id="texto-lista-vazia">Nenhum produto encontrado.</p>
+    </main>
+  </div>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/estoque.js"></script>
+</body>
+</html>
