@@ -3,7 +3,7 @@
 
 ![AUR Last Modified](https://img.shields.io/github/last-commit/marcelbusato2407/baba-maria-inventory-managment)
 
-`Baba Maria Inventory Managment` is an easy tool to manage the inventory of a local pasta production.
+`Baba Maria Inventory Managment` is a lightweight desktop application for managing inventory in a small pasta production business.
 
 ## Key features
 
@@ -14,7 +14,18 @@
 - Movement history sorted from newest to oldest
 - Inventory page with product name search
 - Data persistance using a local file (internet is not necessary)
-  
+
+## Screenshots
+
+### Products
+<img width="800" height="397" alt="image" src="https://github.com/user-attachments/assets/bae02a80-9ac6-4437-8f88-4d3b1f59c89b" />
+
+### Stock
+<img width="800" height="397" alt="image" src="https://github.com/user-attachments/assets/6cb51540-6daf-42b9-82ed-ee4e6e5f3128" />
+
+### Movements
+<img width="800" height="397" alt="Screenshot 2026-10-10 at 17 24 15" src="https://github.com/user-attachments/assets/bf307729-1289-4268-b523-77f9b20ad4f7" />
+
 ## Usage
 
 ```bash
