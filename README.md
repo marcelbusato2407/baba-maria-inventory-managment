@@ -1,8 +1,9 @@
-<img width="800" height="194" alt="Banner" src="https://github.com/user-attachments/assets/6066d277-523d-4d97-a763-0f01ba283585" />
+<img width="682" height="178" alt="Banner" src="https://github.com/user-attachments/assets/092b2a0b-d9da-49e4-89ba-2bdbf00aa096" />
+<br></br>
 
-# Gestão de Controle — Baba Maria Massas
+![AUR Last Modified](https://img.shields.io/github/last-commit/marcelbusato2407/baba-maria-inventory-managment)
 
-Sistema desktop simples para controle de estoque de uma pequena produção artesanal de massas, a Baba Maria Massas. Projeto pessoal desenvolvido para fins de portfólio e aprendizado durante a graduação em Engenharia de Software.
+Easy tool to manage 
 
 ## Sobre o projeto
 
