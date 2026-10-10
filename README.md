@@ -1,3 +1,5 @@
+<img width="800" height="194" alt="Banner" src="https://github.com/user-attachments/assets/6066d277-523d-4d97-a763-0f01ba283585" />
+
 # Gestão de Controle — Baba Maria Massas
 
 Sistema desktop simples para controle de estoque de uma pequena produção artesanal de massas, a Baba Maria Massas. Projeto pessoal desenvolvido para fins de portfólio e aprendizado durante a graduação em Engenharia de Software.
