@@ -3,13 +3,35 @@
 
 ![AUR Last Modified](https://img.shields.io/github/last-commit/marcelbusato2407/baba-maria-inventory-managment)
 
-Easy tool to manage 
+`Baba Maria Inventory Managment` is an easy tool to manage the inventory of a local pasta production.
 
-## Sobre o projeto
+## Key features
 
-A aplicação roda localmente no computador, sem necessidade de servidor externo ou banco de dados remoto. Ela permite cadastrar produtos, controlar as quantidades em estoque e registrar entradas e saídas, mostrando também um pequeno painel com o resumo da situação atual do estoque.
+- Dashboard with inventory overview (total products, low-stock products, and total items)
+- Create, edit and delete products
+- Products listing with stock status (normal, low, out of stock)
+- Record incoming and outgoing stock movements
+- Movement history sorted from newest to oldest
+- Inventory page with product name search
+- Data persistance using a local file (internet is not necessary)
+  
+## Usage
 
-## Tecnologias
+```bash
+# Clone this repository
+$ git clone https://github.com/marcelbusato2407/baba-maria-inventory-managment.git
+
+# Go into the repository
+$ cd baba-maria-inventory-managment
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
+```
+
+## Technologies
 
 - Node.js
 - Electron
@@ -18,12 +40,3 @@ A aplicação roda localmente no computador, sem necessidade de servidor externo
 - CSS
 - LowDB
 
-## Funcionalidades
-
-- Dashboard com resumo do estoque (total de produtos, produtos com estoque baixo e total de itens)
-- Cadastro, edição e exclusão de produtos
-- Listagem de produtos com status (Normal, Estoque baixo, Sem estoque)
-- Registro de movimentações de entrada e saída de estoque
-- Histórico de movimentações, mais recentes primeiro
-- Página de estoque com busca por nome do produto
-- Persistência dos dados em arquivo local (LowDB), mesmo após fechar o programa
